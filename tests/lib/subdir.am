@@ -177,6 +177,13 @@ tests_lib_test_atomhash_slow_LDADD = $(ALL_TESTS_LDADD) -lm
 tests_lib_test_atomhash_slow_SOURCES = tests/lib/test_atomhash.c tests/helpers/c/prng.c
 
 
+check_PROGRAMS += tests/lib/test_admin_group
+tests_lib_test_admin_group_CFLAGS = $(TESTS_CFLAGS)
+tests_lib_test_admin_group_CPPFLAGS = $(TESTS_CPPFLAGS)
+tests_lib_test_admin_group_LDADD = $(ALL_TESTS_LDADD)
+tests_lib_test_admin_group_SOURCES = tests/lib/test_admin_group.c
+EXTRA_DIST += tests/lib/test_admin_group.py
+
 check_PROGRAMS += tests/lib/test_buffer
 tests_lib_test_buffer_CFLAGS = $(TESTS_CFLAGS)
 tests_lib_test_buffer_CPPFLAGS = $(TESTS_CPPFLAGS)
