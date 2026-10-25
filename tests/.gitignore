@@ -36,6 +36,7 @@ frr_northbound*
 /lib/test_atomhash_fast
 /lib/test_atomhash_slow
 /lib/test_atomlist
+/lib/test_base64
 /lib/test_buffer
 /lib/test_checksum
 /lib/test_frrscript
