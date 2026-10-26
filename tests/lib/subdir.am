@@ -144,6 +144,14 @@ EXTRA_DIST += \
 	# end
 
 
+check_PROGRAMS += tests/lib/test_asn
+tests_lib_test_asn_CFLAGS = $(TESTS_CFLAGS)
+tests_lib_test_asn_CPPFLAGS = $(TESTS_CPPFLAGS)
+tests_lib_test_asn_LDADD = $(ALL_TESTS_LDADD)
+tests_lib_test_asn_SOURCES = tests/lib/test_asn.c
+EXTRA_DIST += tests/lib/test_asn.py
+
+
 check_PROGRAMS += tests/lib/test_assert
 tests_lib_test_assert_CFLAGS = $(TESTS_CFLAGS)
 tests_lib_test_assert_CPPFLAGS = $(TESTS_CPPFLAGS)
