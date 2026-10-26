@@ -439,6 +439,14 @@ noinst_HEADERS += tests/lib/test_typelist.h
 EXTRA_DIST += tests/lib/test_typelist.py
 
 
+check_PROGRAMS += tests/lib/test_vector
+tests_lib_test_vector_CFLAGS = $(TESTS_CFLAGS)
+tests_lib_test_vector_CPPFLAGS = $(TESTS_CPPFLAGS)
+tests_lib_test_vector_LDADD = $(ALL_TESTS_LDADD)
+tests_lib_test_vector_SOURCES = tests/lib/test_vector.c
+EXTRA_DIST += tests/lib/test_vector.py
+
+
 check_PROGRAMS += tests/lib/test_versioncmp
 tests_lib_test_versioncmp_CFLAGS = $(TESTS_CFLAGS)
 tests_lib_test_versioncmp_CPPFLAGS = $(TESTS_CPPFLAGS)
