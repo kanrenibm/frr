@@ -199,6 +199,13 @@ tests_lib_test_darr_SOURCES = tests/lib/test_darr.c
 EXTRA_DIST += tests/lib/test_darr.py
 
 
+check_PROGRAMS += tests/lib/test_bitfield
+tests_lib_test_bitfield_CFLAGS = $(TESTS_CFLAGS)
+tests_lib_test_bitfield_CPPFLAGS = $(TESTS_CPPFLAGS)
+tests_lib_test_bitfield_LDADD = $(ALL_TESTS_LDADD)
+tests_lib_test_bitfield_SOURCES = tests/lib/test_bitfield.c
+EXTRA_DIST += tests/lib/test_bitfield.py
+
 check_PROGRAMS += tests/lib/test_graph
 tests_lib_test_graph_CFLAGS = $(TESTS_CFLAGS)
 tests_lib_test_graph_CPPFLAGS = $(TESTS_CPPFLAGS)
