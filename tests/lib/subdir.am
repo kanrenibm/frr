@@ -218,6 +218,14 @@ tests_lib_test_link_state_SOURCES = tests/lib/test_link_state.c
 EXTRA_DIST += tests/lib/test_link_state.py
 
 
+check_PROGRAMS += tests/lib/test_hash
+tests_lib_test_hash_CFLAGS = $(TESTS_CFLAGS)
+tests_lib_test_hash_CPPFLAGS = $(TESTS_CPPFLAGS)
+tests_lib_test_hash_LDADD = $(ALL_TESTS_LDADD)
+tests_lib_test_hash_SOURCES = tests/lib/test_hash.c
+EXTRA_DIST += tests/lib/test_hash.py
+
+
 check_PROGRAMS += tests/lib/test_heavy
 tests_lib_test_heavy_CFLAGS = $(TESTS_CFLAGS)
 tests_lib_test_heavy_CPPFLAGS = $(TESTS_CPPFLAGS)
