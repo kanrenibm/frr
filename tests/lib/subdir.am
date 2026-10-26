@@ -210,6 +210,14 @@ EXTRA_DIST += \
 	# end
 
 
+check_PROGRAMS += tests/lib/test_jhash
+tests_lib_test_jhash_CFLAGS = $(TESTS_CFLAGS)
+tests_lib_test_jhash_CPPFLAGS = $(TESTS_CPPFLAGS)
+tests_lib_test_jhash_LDADD = $(ALL_TESTS_LDADD)
+tests_lib_test_jhash_SOURCES = tests/lib/test_jhash.c
+EXTRA_DIST += tests/lib/test_jhash.py
+
+
 check_PROGRAMS += tests/lib/test_link_state
 tests_lib_test_link_state_CFLAGS = $(TESTS_CFLAGS)
 tests_lib_test_link_state_CPPFLAGS = $(TESTS_CPPFLAGS)
