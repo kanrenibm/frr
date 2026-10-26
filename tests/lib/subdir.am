@@ -199,6 +199,13 @@ tests_lib_test_darr_SOURCES = tests/lib/test_darr.c
 EXTRA_DIST += tests/lib/test_darr.py
 
 
+check_PROGRAMS += tests/lib/test_linklist
+tests_lib_test_linklist_CFLAGS = $(TESTS_CFLAGS)
+tests_lib_test_linklist_CPPFLAGS = $(TESTS_CPPFLAGS)
+tests_lib_test_linklist_LDADD = $(ALL_TESTS_LDADD)
+tests_lib_test_linklist_SOURCES = tests/lib/test_linklist.c
+EXTRA_DIST += tests/lib/test_linklist.py
+
 check_PROGRAMS += tests/lib/test_graph
 tests_lib_test_graph_CFLAGS = $(TESTS_CFLAGS)
 tests_lib_test_graph_CPPFLAGS = $(TESTS_CPPFLAGS)
