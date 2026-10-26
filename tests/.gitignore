@@ -66,6 +66,7 @@ frr_northbound*
 /lib/test_sig
 /lib/test_skiplist
 /lib/test_srcdest_table
+/lib/test_srv6
 /lib/test_stream
 /lib/test_stream_expand
 /lib/test_table
