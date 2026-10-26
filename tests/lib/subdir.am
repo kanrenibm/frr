@@ -430,6 +430,14 @@ EXTRA_DIST += \
 	# end
 
 
+check_PROGRAMS += tests/lib/test_sockunion
+tests_lib_test_sockunion_CFLAGS = $(TESTS_CFLAGS)
+tests_lib_test_sockunion_CPPFLAGS = $(TESTS_CPPFLAGS)
+tests_lib_test_sockunion_LDADD = $(ALL_TESTS_LDADD)
+tests_lib_test_sockunion_SOURCES = tests/lib/test_sockunion.c
+EXTRA_DIST += tests/lib/test_sockunion.py
+
+
 check_PROGRAMS += tests/lib/test_typelist
 tests_lib_test_typelist_CFLAGS = $(TESTS_CFLAGS)
 tests_lib_test_typelist_CPPFLAGS = $(TESTS_CPPFLAGS)
