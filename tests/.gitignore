@@ -61,6 +61,7 @@ frr_northbound*
 /lib/test_rcu
 /lib/test_resolver
 /lib/test_ringbuf
+/lib/test_sbuf
 /lib/test_segv
 /lib/test_seqlock
 /lib/test_sig

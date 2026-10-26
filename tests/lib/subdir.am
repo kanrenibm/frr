@@ -333,6 +333,14 @@ tests_lib_test_ringbuf_SOURCES = tests/lib/test_ringbuf.c
 EXTRA_DIST += tests/lib/test_ringbuf.py
 
 
+check_PROGRAMS += tests/lib/test_sbuf
+tests_lib_test_sbuf_CFLAGS = $(TESTS_CFLAGS)
+tests_lib_test_sbuf_CPPFLAGS = $(TESTS_CPPFLAGS)
+tests_lib_test_sbuf_LDADD = $(ALL_TESTS_LDADD)
+tests_lib_test_sbuf_SOURCES = tests/lib/test_sbuf.c
+EXTRA_DIST += tests/lib/test_sbuf.py
+
+
 check_PROGRAMS += tests/lib/test_segv
 tests_lib_test_segv_CFLAGS = $(TESTS_CFLAGS)
 tests_lib_test_segv_CPPFLAGS = $(TESTS_CPPFLAGS)
