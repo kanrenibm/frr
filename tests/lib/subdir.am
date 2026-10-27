@@ -245,6 +245,14 @@ tests_lib_test_idalloc_LDADD = $(ALL_TESTS_LDADD)
 tests_lib_test_idalloc_SOURCES = tests/lib/test_idalloc.c
 
 
+check_PROGRAMS += tests/lib/test_mpls
+tests_lib_test_mpls_CFLAGS = $(TESTS_CFLAGS)
+tests_lib_test_mpls_CPPFLAGS = $(TESTS_CPPFLAGS)
+tests_lib_test_mpls_LDADD = $(ALL_TESTS_LDADD)
+tests_lib_test_mpls_SOURCES = tests/lib/test_mpls.c
+EXTRA_DIST += tests/lib/test_mpls.py
+
+
 check_PROGRAMS += tests/lib/test_mgmt_msg
 tests_lib_test_mgmt_msg_CFLAGS = $(TESTS_CFLAGS)
 tests_lib_test_mgmt_msg_CPPFLAGS = $(TESTS_CPPFLAGS)
