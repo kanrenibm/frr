@@ -210,6 +210,13 @@ EXTRA_DIST += \
 	# end
 
 
+check_PROGRAMS += tests/lib/test_iso
+tests_lib_test_iso_CFLAGS = $(TESTS_CFLAGS)
+tests_lib_test_iso_CPPFLAGS = $(TESTS_CPPFLAGS)
+tests_lib_test_iso_LDADD = $(ALL_TESTS_LDADD)
+tests_lib_test_iso_SOURCES = tests/lib/test_iso.c
+EXTRA_DIST += tests/lib/test_iso.py
+
 check_PROGRAMS += tests/lib/test_link_state
 tests_lib_test_link_state_CFLAGS = $(TESTS_CFLAGS)
 tests_lib_test_link_state_CPPFLAGS = $(TESTS_CPPFLAGS)
