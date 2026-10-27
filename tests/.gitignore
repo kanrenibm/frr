@@ -50,6 +50,7 @@ frr_northbound*
 /lib/test_link_state
 /lib/test_memory
 /lib/test_mgmt_msg
+/lib/test_mpls
 /lib/test_network_address
 /lib/test_nexthop
 /lib/test_nexthop_iter
