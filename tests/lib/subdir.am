@@ -8,6 +8,13 @@ tests_lib_test_frrlua_LDADD = $(ALL_TESTS_LDADD)
 tests_lib_test_frrlua_SOURCES = tests/lib/test_frrlua.c
 EXTRA_DIST += tests/lib/test_frrlua.py
 
+check_PROGRAMS += tests/lib/test_flex_algo
+tests_lib_test_flex_algo_CFLAGS = $(TESTS_CFLAGS)
+tests_lib_test_flex_algo_CPPFLAGS = $(TESTS_CPPFLAGS)
+tests_lib_test_flex_algo_LDADD = $(ALL_TESTS_LDADD)
+tests_lib_test_flex_algo_SOURCES = tests/lib/test_flex_algo.c
+EXTRA_DIST += tests/lib/test_flex_algo.py
+
 if SCRIPTING
 check_PROGRAMS += tests/lib/test_frrscript
 endif
