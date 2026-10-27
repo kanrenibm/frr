@@ -191,6 +191,13 @@ tests_lib_test_checksum_LDADD = $(ALL_TESTS_LDADD)
 tests_lib_test_checksum_SOURCES = tests/lib/test_checksum.c tests/helpers/c/prng.c
 
 
+check_PROGRAMS += tests/lib/test_openbsd_tree
+tests_lib_test_openbsd_tree_CFLAGS = $(TESTS_CFLAGS)
+tests_lib_test_openbsd_tree_CPPFLAGS = $(TESTS_CPPFLAGS)
+tests_lib_test_openbsd_tree_LDADD = $(ALL_TESTS_LDADD)
+tests_lib_test_openbsd_tree_SOURCES = tests/lib/test_openbsd_tree.c
+EXTRA_DIST += tests/lib/test_openbsd_tree.py
+
 check_PROGRAMS += tests/lib/test_darr
 tests_lib_test_darr_CFLAGS = $(TESTS_CFLAGS)
 tests_lib_test_darr_CPPFLAGS = $(TESTS_CPPFLAGS)
