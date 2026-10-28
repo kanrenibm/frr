@@ -1,4 +1,11 @@
 ##############################################################################
+check_PROGRAMS += tests/lib/test_keychain
+tests_lib_test_keychain_CFLAGS = $(TESTS_CFLAGS)
+tests_lib_test_keychain_CPPFLAGS = $(TESTS_CPPFLAGS)
+tests_lib_test_keychain_LDADD = $(ALL_TESTS_LDADD)
+tests_lib_test_keychain_SOURCES = tests/lib/test_keychain.c
+EXTRA_DIST += tests/lib/test_keychain.py
+
 if SCRIPTING
 check_PROGRAMS += tests/lib/test_frrlua
 endif
