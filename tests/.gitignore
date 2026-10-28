@@ -44,6 +44,7 @@ frr_northbound*
 /lib/test_graph
 /lib/test_grpc
 /lib/test_heavy
+/lib/test_keychain
 /lib/test_heavy_thread
 /lib/test_heavy_wq
 /lib/test_idalloc
