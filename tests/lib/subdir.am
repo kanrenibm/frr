@@ -239,6 +239,13 @@ tests_lib_test_heavy_wq_LDADD = $(ALL_TESTS_LDADD) -lm
 tests_lib_test_heavy_wq_SOURCES = tests/lib/test_heavy_wq.c tests/helpers/c/main.c
 
 
+check_PROGRAMS += tests/lib/test_hook
+tests_lib_test_hook_CFLAGS = $(TESTS_CFLAGS)
+tests_lib_test_hook_CPPFLAGS = $(TESTS_CPPFLAGS)
+tests_lib_test_hook_LDADD = $(ALL_TESTS_LDADD)
+tests_lib_test_hook_SOURCES = tests/lib/test_hook.c
+EXTRA_DIST += tests/lib/test_hook.py
+
 check_PROGRAMS += tests/lib/test_idalloc
 tests_lib_test_idalloc_CFLAGS = $(TESTS_CFLAGS)
 tests_lib_test_idalloc_LDADD = $(ALL_TESTS_LDADD)
