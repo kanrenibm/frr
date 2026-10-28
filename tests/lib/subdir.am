@@ -1,5 +1,12 @@
 ##############################################################################
 if SCRIPTING
+check_PROGRAMS += tests/lib/test_agg_table
+tests_lib_test_agg_table_CFLAGS = $(TESTS_CFLAGS)
+tests_lib_test_agg_table_CPPFLAGS = $(TESTS_CPPFLAGS)
+tests_lib_test_agg_table_LDADD = $(ALL_TESTS_LDADD)
+tests_lib_test_agg_table_SOURCES = tests/lib/test_agg_table.c
+EXTRA_DIST += tests/lib/test_agg_table.py
+
 check_PROGRAMS += tests/lib/test_frrlua
 endif
 tests_lib_test_frrlua_CFLAGS = $(TESTS_CFLAGS)

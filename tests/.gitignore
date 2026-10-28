@@ -32,6 +32,7 @@ frr_northbound*
 /lib/northbound/test_oper_exists
 /lib/cxxcompat
 /lib/fuzz_zlog
+/lib/test_agg_table
 /lib/test_assert
 /lib/test_atomhash_fast
 /lib/test_atomhash_slow
