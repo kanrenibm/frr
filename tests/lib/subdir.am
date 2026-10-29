@@ -447,6 +447,13 @@ tests_lib_test_versioncmp_SOURCES = tests/lib/test_versioncmp.c
 EXTRA_DIST += tests/lib/test_versioncmp.py
 
 
+check_PROGRAMS += tests/lib/test_wheel
+tests_lib_test_wheel_CFLAGS = $(TESTS_CFLAGS)
+tests_lib_test_wheel_CPPFLAGS = $(TESTS_CPPFLAGS)
+tests_lib_test_wheel_LDADD = $(ALL_TESTS_LDADD)
+tests_lib_test_wheel_SOURCES = tests/lib/test_wheel.c
+EXTRA_DIST += tests/lib/test_wheel.py
+
 check_PROGRAMS += tests/lib/test_xref
 tests_lib_test_xref_CFLAGS = $(TESTS_CFLAGS)
 tests_lib_test_xref_CPPFLAGS = $(TESTS_CPPFLAGS)

@@ -74,6 +74,7 @@ frr_northbound*
 /lib/test_ttable
 /lib/test_typelist
 /lib/test_versioncmp
+/lib/test_wheel
 /lib/test_xref
 /lib/test_zlog
 /lib/test_zmq
