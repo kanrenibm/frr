@@ -325,6 +325,14 @@ tests_lib_test_privs_LDADD = $(ALL_TESTS_LDADD)
 tests_lib_test_privs_SOURCES = tests/lib/test_privs.c
 
 
+check_PROGRAMS += tests/lib/test_ptm_lib
+tests_lib_test_ptm_lib_CFLAGS = $(TESTS_CFLAGS)
+tests_lib_test_ptm_lib_CPPFLAGS = $(TESTS_CPPFLAGS)
+tests_lib_test_ptm_lib_LDADD = $(ALL_TESTS_LDADD)
+tests_lib_test_ptm_lib_SOURCES = tests/lib/test_ptm_lib.c
+EXTRA_DIST += tests/lib/test_ptm_lib.py
+
+
 check_PROGRAMS += tests/lib/test_ringbuf
 tests_lib_test_ringbuf_CFLAGS = $(TESTS_CFLAGS)
 tests_lib_test_ringbuf_CPPFLAGS = $(TESTS_CPPFLAGS)
