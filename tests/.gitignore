@@ -65,6 +65,7 @@ frr_northbound*
 /lib/test_seqlock
 /lib/test_sig
 /lib/test_skiplist
+/lib/test_sockopt
 /lib/test_srcdest_table
 /lib/test_stream
 /lib/test_stream_expand
