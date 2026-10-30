@@ -41,6 +41,7 @@ frr_northbound*
 /lib/test_frrscript
 /lib/test_darr
 /lib/test_frrlua
+/lib/test_ferr
 /lib/test_graph
 /lib/test_grpc
 /lib/test_heavy
