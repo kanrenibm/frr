@@ -260,6 +260,14 @@ tests_lib_test_memory_LDADD = $(ALL_TESTS_LDADD)
 tests_lib_test_memory_SOURCES = tests/lib/test_memory.c
 
 
+check_PROGRAMS += tests/lib/test_mlag
+tests_lib_test_mlag_CFLAGS = $(TESTS_CFLAGS)
+tests_lib_test_mlag_CPPFLAGS = $(TESTS_CPPFLAGS)
+tests_lib_test_mlag_LDADD = $(ALL_TESTS_LDADD)
+tests_lib_test_mlag_SOURCES = tests/lib/test_mlag.c
+EXTRA_DIST += tests/lib/test_mlag.py
+
+
 check_PROGRAMS += tests/lib/test_network_address
 tests_lib_test_network_address_CFLAGS = $(TESTS_CFLAGS)
 tests_lib_test_network_address_CPPFLAGS = $(TESTS_CPPFLAGS)
