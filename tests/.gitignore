@@ -51,6 +51,7 @@ frr_northbound*
 /lib/test_memory
 /lib/test_mgmt_msg
 /lib/test_network_address
+/lib/test_monotime
 /lib/test_nexthop
 /lib/test_nexthop_iter
 /lib/test_ntop
