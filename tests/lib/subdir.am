@@ -210,6 +210,14 @@ EXTRA_DIST += \
 	# end
 
 
+check_PROGRAMS += tests/lib/test_json
+tests_lib_test_json_CFLAGS = $(TESTS_CFLAGS)
+tests_lib_test_json_CPPFLAGS = $(TESTS_CPPFLAGS)
+tests_lib_test_json_LDADD = $(ALL_TESTS_LDADD)
+tests_lib_test_json_SOURCES = tests/lib/test_json.c
+EXTRA_DIST += tests/lib/test_json.py
+
+
 check_PROGRAMS += tests/lib/test_link_state
 tests_lib_test_link_state_CFLAGS = $(TESTS_CFLAGS)
 tests_lib_test_link_state_CPPFLAGS = $(TESTS_CPPFLAGS)
