@@ -279,6 +279,14 @@ tests_lib_test_nexthop_iter_SOURCES = tests/lib/test_nexthop_iter.c tests/helper
 EXTRA_DIST += tests/lib/test_nexthop_iter.py
 
 
+check_PROGRAMS += tests/lib/test_pullwr
+tests_lib_test_pullwr_CFLAGS = $(TESTS_CFLAGS)
+tests_lib_test_pullwr_CPPFLAGS = $(TESTS_CPPFLAGS)
+tests_lib_test_pullwr_LDADD = $(ALL_TESTS_LDADD)
+tests_lib_test_pullwr_SOURCES = tests/lib/test_pullwr.c
+EXTRA_DIST += tests/lib/test_pullwr.py
+
+
 check_PROGRAMS += tests/lib/test_nexthop
 tests_lib_test_nexthop_CFLAGS = $(TESTS_CFLAGS)
 tests_lib_test_nexthop_CPPFLAGS = $(TESTS_CPPFLAGS)
